@@ -5,8 +5,10 @@ function pizza(size, toppings){
   this.toppings = toppings;
 }
 
-pizza.prototype.newPizza = function() {
-  var size = this.size;
-  var toppings = this.toppings;
-  return (this.size + "," + this.toppings);
-};
+//pizza.prototype.price = function() {
+  //var small = 10;
+  //var toppings = ();
+  //this.sizePrice = (["medium"= small * 1.2],["large"= small * 1.4],["extra-large"= small * 1.6]);
+  //this.toppingsPrice = toppings;
+  //this.price= this.sizePrice + this.toppingsPrice;
+//};
