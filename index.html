@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="specs/jquery-1.12.0.js"></script>
+    <script src="specs/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="jquery-1.12.0.js"></script>
-    <script src="scripts.js"></script>
-    <title></title>
+
+    <title>Wren's Pizzaria</title>
   </head>
   <body>
     <div class="container">
-      <h1></h1>
+      <h2>Wren's Pizzaria : The Most Delicious Pizza Within An Extremely Small Radius</h2>
+
+
 
       <form id="pizza-order">
         <div class="form-group">
-
+          <h4> Our Reasonable Sizes! </h4>
+          <div class="checkbox">
+          <div id="size-option"
+            <label class="checkbox-inline">
+               <input class="messageCheckbox" type="checkbox" value="small"> Small $10
+            </label>
+            <label class="checkbox-inline">
+               <input class="messageCheckbox" type="checkbox" value="medium"> Medium $12
+            </label>
+            <label class="checkbox-inline">
+               <input class="messageCheckbox" type="checkbox" value="large"> Large $14
+            </label>
+          </div>
         </div>
+        <div class="form-group">
+          <h4> Our Okay Toppings! Only $1 Each! </h4>
+          <div class="multiselect">
+          <div id="toppings-option"
+          <label class="checkbox-inline">
+            <input class="messageCheckbox" type="checkbox" value="sausage" name="topping"> Pepperoni
+          </label>
+          <label class="checkbox-inline">
+            <input class="messageCheckbox" type="checkbox" value="sausage" name="topping"> Sausage
+          </label>
+          <label class="checkbox-inline">
+            <input class="messageCheckbox" type="checkbox" value="onions" name="topping"> Onions
+          </label>
+          <label class="checkbox-inline">
+            <input class="messageCheckbox" type="checkbox" value="peppers" name="topping"> Peppers
+          </label>
+          <label class="checkbox-inline">
+            <input class="messageCheckbox" type="checkbox" value="mushrooms" name="topping"> Mushrooms
+          </label>
+          </div> -->
 
         <button type="submit" class="btn">Place Order</button>
       </form>
 
-      <div id="order-placed">
-        <p><span class=""></span><span class=""></span></p>
+        <div id="order-placed">
+          <h3>Order Placed:</h3>
+          <ul id="final-order">
+
+          </ul>
       </div>
     </div>
   </body>

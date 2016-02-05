@@ -10,12 +10,33 @@ function pizza(size, toppings){
    var price = this.price;
    var toppings = this.toppings;
    if (this.size === "small") {
-     this.price = this.price * 1;
+     price = price;
    } else if (this.size === "medium") {
-     this.price = this.price * 1.2;
+     price = price * 1.2;
    } else {
-     price = 14;
+     price = price * 1.4;
    }
    price = price + toppings;
    return price;
   };
+
+$(document).ready(function() {
+
+    $('form#pizza-order').submit(function(event){
+        event.preventDefault();
+        var sizeOption = $('.messageCheckbox:checked').val();
+
+        var toppings_count = 0;
+     var toppings = document.getElementsByName('topping')
+     for (var i=0; i<toppings.length; i++) {
+       if (toppings[i].checked) {
+         toppings_count += 1;
+       }
+     }
+     var pizzaPizza = new pizza(sizeOption, toppings_count);
+     alert(pizzaPizza.Price());
+      })
+      $(document).ready(function() {
+        $("form#new-contact").submit(function(event) {
+          event.preventDefault();
+  });
