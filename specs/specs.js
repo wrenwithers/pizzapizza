@@ -4,8 +4,8 @@ describe('pizza', function() {
     expect(testPizza.size).to.equal("small");
     expect(testPizza.toppings).to.eql(2);
   });
-  //it("attatches a price to the size and topping values, and calculates the total"), function() {
-    //var testPizza = new pizza("small",2);
-    //expect(testPizza.price).to.eql(14);
-//};
+  it("creates a prototype for determining size price", function() {
+    var testPizza = new pizza("adsfsa", 2);
+    expect(testPizza.sizePrice()).to.equal(14);
+  });
 });
