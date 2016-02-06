@@ -1,0 +1,13 @@
+body {
+  font-family: 'Amatic SC', cursive;
+}
+.heading {
+  font-size: 64px;
+  text-align: center;
+}
+.form-group {
+  font-size: 24px;
+}
+.button {
+  font-size: 32px;
+}

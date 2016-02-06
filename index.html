@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
     <script src="specs/jquery-1.12.0.js"></script>
     <script src="specs/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -10,56 +11,64 @@
   </head>
   <body>
     <div class="container">
-      <h2>Wren's Pizzaria : The Most Delicious Pizza Within An Extremely Small Radius</h2>
-
+      <div class="heading">
+      <p>Wren's Pizzaria : The Most Delicious Pizza Within An Extremely Small Radius</p>
+      </div>
 
 
       <form id="pizza-order">
         <div class="form-group">
-          <h4> Our Reasonable Sizes! </h4>
-          <div class="checkbox">
-          <div id="size-option"
+        <div class="col-md-6">
+            <h1> Our Reasonable Sizes! </h1>
+             <div class="checkbox">
+             <div id="size-option"
             <label class="checkbox-inline">
-               <input class="messageCheckbox" type="checkbox" value="small"> Small $10
-            </label>
+               <input class="messageCheckbox" type="checkbox" value="small"> Small $10</label>
             <label class="checkbox-inline">
-               <input class="messageCheckbox" type="checkbox" value="medium"> Medium $12
-            </label>
+               <input class="messageCheckbox" type="checkbox" value="medium"> Medium $12</label>
             <label class="checkbox-inline">
-               <input class="messageCheckbox" type="checkbox" value="large"> Large $14
-            </label>
-          </div>
+               <input class="messageCheckbox" type="checkbox" value="large"> Large $14</label>
+             </div>
+             </div>
+        </div>
         </div>
         <div class="form-group">
-          <h4> Our Okay Toppings! Only $1 Each! </h4>
-          <div class="multiselect">
-          <div id="toppings-option"
+        <div class="col-md-6">
+            <h1> Our Okay Toppings! Only $1 Each! </h1>
+            <div class="multiselect">
+            <div id="toppings-option"
           <label class="checkbox-inline">
-            <input class="messageCheckbox" type="checkbox" value="sausage" name="topping"> Pepperoni
-          </label>
+            <input class="messageCheckbox" type="checkbox" value="sausage" name="topping"> Pepperoni</label>
           <label class="checkbox-inline">
-            <input class="messageCheckbox" type="checkbox" value="sausage" name="topping"> Sausage
-          </label>
+            <input class="messageCheckbox" type="checkbox" value="sausage" name="topping"> Sausage</label>
           <label class="checkbox-inline">
-            <input class="messageCheckbox" type="checkbox" value="onions" name="topping"> Onions
-          </label>
+            <input class="messageCheckbox" type="checkbox" value="onions" name="topping"> Onions</label>
           <label class="checkbox-inline">
-            <input class="messageCheckbox" type="checkbox" value="peppers" name="topping"> Peppers
-          </label>
+            <input class="messageCheckbox" type="checkbox" value="peppers" name="topping"> Peppers</label>
           <label class="checkbox-inline">
-            <input class="messageCheckbox" type="checkbox" value="mushrooms" name="topping"> Mushrooms
-          </label>
-          </div> -->
+            <input class="messageCheckbox" type="checkbox" value="mushrooms" name="topping"> Mushrooms</label>
+            </div>
+            </div>
+        </div>
+        </div>
 
-        <button type="submit" class="btn">Place Order</button>
-      </form>
+
+        <div class="row">
+          <div class="col-md-12">
+        <div class="button"><button type="submit" class="btn btn-info btn-lg">Place Order</button>
+        </div>
+          </div>
+        </div>
 
         <div id="order-placed">
-          <h3>Order Placed:</h3>
-          <ul id="final-order">
+          <h2>Final Cost:</h2>
+          <h2><ul id="finalOrder"></h2>
+
+            </form>
+
+            <center><img src="img/pizza.jpg" alt="Pizza" style="width:900px;height:500px;"></center>
 
           </ul>
       </div>
-    </div>
   </body>
 </html>

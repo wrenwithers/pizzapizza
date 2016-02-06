@@ -22,21 +22,17 @@ function pizza(size, toppings){
 
 $(document).ready(function() {
 
-    $('form#pizza-order').submit(function(event){
-        event.preventDefault();
-        var sizeOption = $('.messageCheckbox:checked').val();
-
-        var toppings_count = 0;
-     var toppings = document.getElementsByName('topping')
-     for (var i=0; i<toppings.length; i++) {
-       if (toppings[i].checked) {
-         toppings_count += 1;
-       }
-     }
-     var pizzaPizza = new pizza(sizeOption, toppings_count);
-     alert(pizzaPizza.Price());
-      })
-      $(document).ready(function() {
-        $("form#new-contact").submit(function(event) {
-          event.preventDefault();
-  });
+  $('form#pizza-order').submit(function(event){
+    event.preventDefault();
+      var sizeOption = $('.messageCheckbox:checked').val();
+      var toppings_count = 0;
+      var toppings = document.getElementsByName('topping')
+           for (var i=0; i<toppings.length; i++) {
+             if (toppings[i].checked) {
+                toppings_count += 1;
+              }
+            }
+      var pizzaPizza = new pizza(sizeOption, toppings_count);
+            finalOrder.innerHTML = "$ " + pizzaPizza.Price();
+  })
+});
